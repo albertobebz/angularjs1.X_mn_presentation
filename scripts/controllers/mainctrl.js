@@ -1,4 +1,4 @@
-'use strict';
+'strict mode';
 
 app.controller("mainCtrl", function($scope, dataService){
 
@@ -11,7 +11,7 @@ app.controller("mainCtrl", function($scope, dataService){
   }
 
   dataService.getTodos(function(response){
-    scope.todos = response.data;
+    $scope.todos = response.data;
   });
 
   $scope.deleteTodo = function(todo, $index){
