@@ -6,10 +6,10 @@ app.service("dataService", function($http){
   };
 
   this.deleteTodo = function(todo){
-    console.log(todo.name + " has been deleted");
+    console.log("The" + todo.name + " has been deleted");
   };
 
-  this.saveTodo = function(todo){
-    console.log(todo.name + " has been saved");
+  this.saveTodos = function(todo){
+    console.log(todos.length + " have been saved");
   };
 });

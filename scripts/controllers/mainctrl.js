@@ -7,7 +7,7 @@ app.controller("mainCtrl", function($scope, dataService){
       name: "new task",
       date: new Date()
     };
-    $scope.todos.push(todo);
+    $scope.todos.unshift(todo);
   }
 
   dataService.getTodos(function(response){
@@ -19,8 +19,13 @@ app.controller("mainCtrl", function($scope, dataService){
     $scope.todos.splice($index, 1);
   }
 
-  $scope.saveTodo = function(todo){
-    dataService.saveTodo(todo);
+  $scope.saveTodos = function(){
+    var filteredTodos = $scope.todos.filter(function(todo){
+      if(todo.edited){
+        return todo;
+      }
+    });
+    dataService.saveTodos(filteredTodos);
   }
 
 });
