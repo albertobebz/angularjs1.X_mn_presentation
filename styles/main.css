@@ -27,6 +27,16 @@ a:hover {
   text-decoration: none;
 }
 
+.hero {
+  top: 45px;
+  right: 40px;
+  width: 180px;
+  height: auto;
+  position: absolute;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
 .list {
   width: 80%;
   background: #fff;
