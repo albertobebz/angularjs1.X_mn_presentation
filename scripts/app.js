@@ -6,10 +6,14 @@ app.config(function($routeProvider) {
       controller: 'mainCtrl',
       templateUrl: 'views/home.html'
     })
-    .when('/test1', {
-      templateUrl: "views/test.html"
+    .when('/books', {
+      controller: "booksCtrl",
+      templateUrl: "views/books.html"
+    })
+    .when('/contact', {
+      templateUrl: "views/contact.html"
     })
     .otherwise({
-        template : "<h1>Nothing has been selected</h1>"
+        templateUrl : "views/home.html"
     });
 });
