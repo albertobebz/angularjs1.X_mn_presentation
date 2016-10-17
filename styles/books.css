@@ -21,7 +21,6 @@
    margin: 0 0 80px 0;
    padding: 20px 0;
    line-height: 60px;
-   width: 50%;
    margin: 0 auto;
 }
 
@@ -74,7 +73,7 @@
    width: 80px;
    position: absolute;
    top: -40px;
-   right: 20px;
+   right: -40px;
 }
 
 .rating {
@@ -87,7 +86,6 @@
 
 .likes,
 .dislikes {
-   background: #F65A5B ;
    color: #fff;
    cursor: pointer;
    display: inline-block;
@@ -103,10 +101,16 @@
    transition: background 500ms;
 }
 
+.likes {
+   background: lightgreen;
+}
+
+.dislikes {
+   background: #F65A5B;
+}
+
 .likes:hover,
 .dislikes:hover {
-   color: #F65A5B ;
-   background: rgba(246, 90, 91, 0.25);
    transition: background 500ms;
 }
 
@@ -122,4 +126,12 @@
 
 .footer img {
    margin: 0 10px;
+}
+
+.panel-body p {
+    text-align: left;
+}
+
+.panel-default {
+   position: relative;
 }

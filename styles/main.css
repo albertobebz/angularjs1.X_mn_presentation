@@ -154,3 +154,11 @@ input[type="checkbox"] + span {
 input[type="checkbox"]:checked + span {
   background:url(checkbox-filled.svg) left top no-repeat;
 }
+
+/* CONTACT */
+
+form {
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+}

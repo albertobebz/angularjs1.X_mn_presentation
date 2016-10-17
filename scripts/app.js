@@ -1,4 +1,4 @@
-var app = angular.module("todoListApp", ["ngRoute"]);
+var app = angular.module("todoListApp", ["ngRoute", "jcs-autoValidate"]);
 
 app.config(function($routeProvider) {
   $routeProvider
@@ -11,6 +11,7 @@ app.config(function($routeProvider) {
       templateUrl: "views/books.html"
     })
     .when('/contact', {
+      controller: "MinMaxCtrl",
       templateUrl: "views/contact.html"
     })
     .otherwise({
